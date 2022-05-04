@@ -14,3 +14,9 @@ for i in range(6):
     turn_right()
     move()
     turn_left()
+    
+    
+############
+# while at_goal != True:
+#     jump()
+    
