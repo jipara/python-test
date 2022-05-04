@@ -20,3 +20,6 @@ for i in range(6):
 # while at_goal != True:
 #     jump()
     
+##########
+#while not at_goal():
+   # jump()
