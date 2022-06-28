@@ -39,6 +39,10 @@ print(max_temp)
 print(data.condition)
 print(data["condition"])
 
+temp_day = data[data.temp == "Monday"]
+monday_condition = temp_day.condition
+print(monday_condition)
+
 #DataFrame
 data_dict = {
     "students": ["Jipara", "Kamila", "David"],
