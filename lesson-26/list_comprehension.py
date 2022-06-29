@@ -7,7 +7,7 @@ new = [letter for letter in name]
 
 new_range = [n * 2 for n in range(1, 5)]
 
-names = ["Aziz", "David", "Jipara", "Kamila", "Zayn"]
+names = []
 short_names = [name for name in names if len(name) < 5]
 
 short_names = [name.upper() for name in names if len(name) < 5]
