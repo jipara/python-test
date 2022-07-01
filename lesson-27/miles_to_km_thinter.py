@@ -12,7 +12,7 @@ window.config(padx=20, pady=20)
 
 def button_clicked():
     new_text = entry.get()
-    km1 = round(int(new_text) / 0.621371)
+    km1 = round(int(new_text) * 0.621371)
     label4.config(text=km1)
 
 
@@ -31,7 +31,7 @@ entry.get()
 
 
 label1 = Label(text="is equal to", font=("Arial", 12, "bold"))
-label1.grid(column=0, row=3)
+label1.grid(column=0, row=2)
 
 label2 = Label(text="Miles", font=("Arial", 12, "bold"))
 label2.grid(column=2, row=0)
@@ -40,6 +40,6 @@ label3 = Label(text="Km", font=("Arial", 12, "bold"))
 label3.grid(column=2, row=2)
 
 label4 = Label(text=0, font=("Arial", 12, "bold"))
-label4.grid(column=1, row=3)
+label4.grid(column=1, row=2)
 
 window.mainloop()
