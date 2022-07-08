@@ -29,3 +29,16 @@ for post in facebook_posts:
 #total_likes += 0
 
 print(total_likes)
+#3Nato
+def generate_phonetic():
+    user_input = input("What is your name?").upper()
+    try:
+        nato_output = [data_dict[letter] for letter in user_input]
+        print(nato_output)
+    except KeyError:
+        print("Sorry, only letters in the alphabet please.")
+        generate_phonetic()
+    else:
+        print(nato_output)
+
+generate_phonetic()
