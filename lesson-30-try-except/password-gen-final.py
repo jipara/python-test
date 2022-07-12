@@ -119,3 +119,23 @@ button2.grid(column=1, row=4, columnspan=2)
 button3 = Button(text="Search", width=13, command=find_password)
 button3.grid(column=2, row=1, columnspan=2)
 window.mainloop()
+
+
+#######Angela's code
+
+def find_password():
+    website = website_entry.get()
+    try:
+        with open("data.json") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Error", message="No Data File Found.")
+    else:
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+        else:
+            messagebox.showinfo(title="Error", message=f"No details for {website} exists.")
+
+
