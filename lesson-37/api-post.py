@@ -1,4 +1,4 @@
-import requests
+#https://docs.pixe.la/entry/delete-pixelimport requests
 from datetime import datetime
 
 
