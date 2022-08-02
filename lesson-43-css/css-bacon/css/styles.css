@@ -1,0 +1,23 @@
+/********************TAG SELECTORS******************/
+body{
+background-color: grey;
+}
+
+h1{
+color: red;
+}
+
+/*
+img{
+background-color: red;
+}
+*/
+
+/********************CLASS SELECTORS******************/
+.bacon{
+background-color: red;
+}
+
+.fire{
+background-color: green;
+}
