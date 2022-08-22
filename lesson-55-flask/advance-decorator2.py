@@ -20,3 +20,20 @@ def create_blog_post(user):
 new_user = User("angela")
 new_user.is_logged_in = True
 create_blog_post(new_user)
+
+
+#######################
+# Create the logging_decorator() function 👇
+def logging_decorator(function):
+    def wrapper(*args, **kwargs):
+        with open("logs.txt", "a") as f:
+            f.write(function.__name__)
+        val = function(*args, **kwargs)    
+        return val
+    return wrapper
+
+@logging_decorator
+def add(x,y):
+    return x + y
+# Use the decorator 👇
+add(5, 8)
